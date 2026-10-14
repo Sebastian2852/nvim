@@ -45,7 +45,7 @@ vim.opt.listchars = {
 }
 
 vim.opt.fillchars = {
-  eob = " ",
+    eob = " ",
 }
 
 vim.opt.tabstop = 4
@@ -67,3 +67,20 @@ require("gruber-darker").setup({
 vim.cmd.colorscheme("carbonfox")
 
 vim.lsp.enable("clangd")
+
+local scratch_buf = nil
+
+vim.api.nvim_create_user_command("Scratch", function(opts)
+    local ft = opts.args ~= "" and opts.args or "markdown"
+
+    if not (scratch_buf and vim.api.nvim_buf_is_valid(scratch_buf)) then
+        scratch_buf = vim.api.nvim_create_buf(false, true)
+    end
+
+    vim.api.nvim_set_current_buf(scratch_buf)
+    vim.bo[scratch_buf].filetype = ft
+end, {
+    nargs = "?",
+    complete = "filetype",
+    desc = "Open a scratch buffer, optionally with a filetype",
+})
