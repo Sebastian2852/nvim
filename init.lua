@@ -5,6 +5,7 @@ local PACKAGES = {
     -- "https://github.com/blazkowolf/gruber-darker.nvim",
     -- "https://github.com/folke/tokyonight.nvim",
     "https://github.com/EdenEast/nightfox.nvim",
+    "https://github.com/rebelot/kanagawa.nvim",
 }
 
 local KEYMAP = {
@@ -64,7 +65,8 @@ require("gruber-darker").setup({
 ]]--
 -- vim.cmd.colorscheme("gruber-darker")
 -- vim.cmd.colorscheme("tokyonight")
-vim.cmd.colorscheme("carbonfox")
+-- vim.cmd.colorscheme("carbonfox")
+vim.cmd.colorscheme("kanagawa")
 
 vim.lsp.enable("clangd")
 
