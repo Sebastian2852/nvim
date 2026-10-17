@@ -6,6 +6,9 @@ local PACKAGES = {
     -- "https://github.com/folke/tokyonight.nvim",
     "https://github.com/EdenEast/nightfox.nvim",
     "https://github.com/rebelot/kanagawa.nvim",
+
+    "https://github.com/ej-shafran/compile-mode.nvim",
+    "https://github.com/nvim-lua/plenary.nvim"
 }
 
 local KEYMAP = {

@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "compile-mode.nvim": {
+      "rev": "c3d4df990c1c2a3add925379eed482df437d065d",
+      "src": "https://github.com/ej-shafran/compile-mode.nvim"
+    },
     "gruber-darker.nvim": {
       "rev": "50fa4e583099729fcaaadc73a5afb74f7a91a625",
       "src": "https://github.com/blazkowolf/gruber-darker.nvim"
@@ -27,6 +31,10 @@
     "nvim-web-devicons": {
       "rev": "58447c1fca354bbf184425e4a8d01deecbd6f3c4",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
